@@ -1,10 +1,12 @@
 import Navbar from "../view/Navbar"
+import SideBar from "../view/SideBar"
 
 
 const Layout = () => {
   return (
     <div>
-      <Navbar></Navbar>
+      
+      <SideBar></SideBar>
     </div>
   )
 }
