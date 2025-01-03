@@ -1,0 +1,112 @@
+.navbarMain {
+  padding: 8px 8px 0 28px;
+}
+
+.navbarWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 3rem;
+
+  overflow: hidden;
+}
+
+.searchAreaWrapper {
+  display: flex;
+  gap: 8px;
+  max-width: 546px;
+  min-width: 350px;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 686px;
+}
+
+.searchInputArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 474px;
+  height: 3rem;
+  background-color: #1f1f1f;
+  border-radius: 500px;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  -ms-border-radius: 500px;
+  -o-border-radius: 500px;
+}
+.searchInput {
+  background-color: transparent;
+  width: inherit;
+  outline: none;
+  border: none;
+}
+
+.serachHomeIcon {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f1f1f;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  /* background-color: #1f1f1f; */
+  transition: all 0.3s ease;
+}
+
+.searchGIcon {
+  transition: all 0.3s ease;
+}
+
+.authWrapper {
+  display: flex;
+  height: 48px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+
+.customButton {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  -webkit-border-radius: 9999px;
+  -moz-border-radius: 9999px;
+  -ms-border-radius: 9999px;
+  -o-border-radius: 9999px;
+}
+
+.customButton:hover {
+  transform: scale(1.05);
+}
+
+.regBtn {
+  padding: 8px 32px 8px 8px;
+  color: #656565;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.regBtn:hover {
+  transform: scale(1.05);
+}
+.serachHomeIcon:hover {
+  transform: scale(1.05);
+}
+
+.searchGIcon:hover {
+  transform: scale(1.05);
+}
