@@ -1,3 +1,4 @@
+import Footer from "../view/Footer"
 import Navbar from "../view/Navbar"
 import SideBar from "../view/SideBar"
 
@@ -5,8 +6,7 @@ import SideBar from "../view/SideBar"
 const Layout = () => {
   return (
     <div>
-      
-      <SideBar></SideBar>
+      <Footer></Footer>
     </div>
   )
 }
