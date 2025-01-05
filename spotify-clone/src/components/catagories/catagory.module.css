@@ -1,0 +1,41 @@
+.catagoryCardWarapper {
+    padding: 12px;
+    width: 300px;
+    height: 169px;
+}
+
+.catgoryCard {
+    background-color: rgb(220, 20, 140);
+    border-radius: 8px;
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.cardImg {
+    right: 0;
+    transform: rotate(-25deg) translate(18%, -2%);
+    border-radius: 4px;
+    bottom: 0;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    position: absolute;
+    width: 45%;
+    object-fit: cover;
+    object-position: center center;
+    -webkit-transform: rotate(-25deg) translate(18%, -2%);
+    -moz-transform: rotate(-25deg) translate(18%, -2%);
+    -ms-transform: rotate(-25deg) translate(18%, -2%);
+    -o-transform: rotate(-25deg) translate(18%, -2%);
+}
+
+.cardCopy {
+    hyphens: auto;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    padding: 16px;
+    position: absolute;
+    padding-inline-end: 30%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-wrap: balance;
+}
