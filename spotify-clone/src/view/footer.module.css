@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 66px;
+  height: 4.125rem;
   transition: opacity 0.3s ease-in;
   background-image: -webkit-gradient(
     linear,
@@ -18,7 +18,7 @@
   flex-direction: row;
   align-items: center;
   cursor: pointer;
-  gap: 24px;
+  gap: 1.5rem;
   justify-content: space-between;
   position: relative;
   z-index: 1;

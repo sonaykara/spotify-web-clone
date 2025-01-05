@@ -1,22 +1,22 @@
-import styles from "./artistCard.module.css";
-function ArtistCard() {
+import styles from "./card.module.css";
+function Card() {
   return (
-    <div className={styles.artistContainer}>
-      <div className={styles.artistCard}>
+    <div className={styles.cardContainer}>
+      <div className={styles.card}>
         <div className={styles.cardImageWrapper}>
           <img
-            className={styles.artistImage}
+            className={styles.cardImage}
             src="https://picsum.photos/200/300"
             alt=""
           />
         </div>
         <div className={styles.cardTextArea}>
+          <p className={styles.cardTitle}>Şarkı ismi</p>
           <h3 className={styles.artistName}>snatçı ismi</h3>
-          <p className={styles.artistTitle}>ünvan</p>
         </div>
       </div>
     </div>
   );
 }
 
-export default ArtistCard;
+export default Card;

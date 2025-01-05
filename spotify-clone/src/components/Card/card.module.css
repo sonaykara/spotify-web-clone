@@ -1,12 +1,11 @@
-.artistContainer {
+.cardContainer {
   display: flex;
 }
 
-.artistCard {
+.card {
   background-color: #181818;
   width: 14.375rem;
   height: 17.75rem;
-  border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   padding-block: 0.75rem;
   padding-inline: 0.75rem;
@@ -21,11 +20,11 @@
   align-items: center;
 }
 
-.artistImage {
+.cardImage {
   object-fit: cover;
-  border-radius: 50%;
   width: 13.75rem;
   height: 13.75rem;
+  border-radius: 12px;
 }
 .cardTextArea {
   display: flex;
@@ -42,8 +41,7 @@
   font-weight: bold;
 }
 
-.artistTitle {
+.cardTitle {
   font-size: 0.875rem;
   color: #aaa;
-  margin-top: 5px;
 }
