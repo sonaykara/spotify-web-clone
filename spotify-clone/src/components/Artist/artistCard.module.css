@@ -1,0 +1,42 @@
+
+.artistContainer {
+  display: flex;
+  padding-block: 12px;
+  padding-inline: 12px;
+}
+
+.artistCard {
+  background-color: #181818;
+  width: 230px;
+  height: 284px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+.artistImage {
+  object-fit: cover;
+  border: 3px solid #333;
+  border-radius: 50%;
+  width: 220px;
+  height: 220px;
+}
+.cardTextArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  p {
+    color: #b3b3b3;
+  }
+}
+
+.artistName {
+  color: white;
+  font-weight: bold;
+}
+
+.artistTitle {
+  font-size: 0.875rem;
+  color: #aaa;
+  margin-top: 5px;
+}
