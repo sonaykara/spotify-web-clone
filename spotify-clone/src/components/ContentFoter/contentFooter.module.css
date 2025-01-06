@@ -82,10 +82,14 @@
 }
 
 .hr {
+  width: 100%;
   border-color: rgba(255, 255, 255, 0.1);
-  margin-block-start: 0px;
-  box-sizing: border-box;
-  border: 0px;
-  border-block-start: 1px solid #dedede;
-  margin-block: 1.5rem;
+}
+
+.footerCopy {
+  margin-bottom: 5rem;
+  padding-top: 1rem;
+  p {
+    color: #b3b3b3;
+  }
 }

@@ -14,7 +14,7 @@ const SideBar = () => {
                 <SiWikibooks></SiWikibooks>
                 <div>Kitaplığın</div>
               </div>
-              <div className={styles.headerAddButton}>
+              <div className={styles.headerPlusButton}>
                 <FiPlus></FiPlus>
               </div>
             </div>
@@ -24,23 +24,22 @@ const SideBar = () => {
       <div className={styles.sideBarSeciton}></div>
       <div className={styles.sideBarMain}>
         <div className={styles.sideBarMainWrapper}>
-          <section className={styles.sideBarUpContent}>
-            <div className={styles.sideBarUpContentItems}>
+          <section className={styles.sideBarFirstContent}>
+            <div className={styles.sideBarFirstContentItems}>
               <div>İlk çalma listeni oluştur</div>
-              <div>Çok kolay. Sana yardımcı olacağız</div>
+              <p>Çok kolay. Sana yardımcı olacağız</p>
             </div>
             <div>
               <div className={styles.customButton}>Çalma Listesi Oluşturun</div>
             </div>
           </section>
-          <section className={styles.sideBarDownContent}>
-            <div className={styles.sideBarDownContentItems}>
+          <section className={styles.sideBarSecondContent}>
+            <div className={styles.sideBarSecondContentItems}>
               <div>Takip etmek isteyeceğin podcast'ler bulalım</div>
-              <div>Yeni bölümler yayınlandığında sana haber vereceğiz</div>
+              <p>Yeni bölümler yayınlandığında sana haber vereceğiz</p>
             </div>
             <div className={styles.customButton}>Podcast'lere göz at</div>
           </section>
-          <div style={{"height" : "404px"}}></div>
         </div>
       </div>
       <div className={styles.sideBarLinks}>
@@ -62,13 +61,13 @@ const SideBar = () => {
             <a
               href="https://www.spotify.com/tr-tr/legal/privacy-policy/"
               target="_blank"
-              style={{ "margin-right": "0px" }}
+              style={{ marginRight: "0px" }}
             >
               <span>Gizlilik Politikası</span>
             </a>
           </div>
           <div>
-            <div style={{ "margin-right": "0px" }}>
+            <div style={{ marginRight: "0px" }}>
               <a>Tanımlama Bilgisi Ayarları</a>
             </div>
           </div>
@@ -80,7 +79,7 @@ const SideBar = () => {
               <span>Reklamlar Hakkında</span>
             </a>
           </div>
-          <div style={{ "margin-right": "0px" }}>
+          <div style={{ marginRight: "0px" }}>
             <a
               href="https://www.spotify.com/tr-tr/accessibility/"
               target="_blank"
@@ -90,8 +89,8 @@ const SideBar = () => {
           </div>
           <div
             style={{
-              "margin-right": "0px",
-              "margin-left": "16px",
+              marginRight: "0px",
+              marginleft: "16px",
               color: "white",
             }}
           >

@@ -1,17 +1,20 @@
 .cardContainer {
   display: flex;
+  background-color: transparent;
 }
 
 .card {
-  background-color: #181818;
   width: 14.375rem;
   height: 17.75rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   padding-block: 0.75rem;
   padding-inline: 0.75rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+.card:hover {
+  background-color: #181818;
 }
 
 .cardImageWrapper {
@@ -26,6 +29,7 @@
   width: 13.75rem;
   height: 13.75rem;
   border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 .cardTextArea {
   display: flex;

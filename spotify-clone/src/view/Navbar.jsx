@@ -13,13 +13,13 @@ const Navbar = () => {
         </div>
         <div className={styles.searchAreaWrapper}>
           <div className={styles.serachHomeIcon}>
-            <GoHome size={24} style={{ color: " #656565" }}></GoHome>
+            <GoHome size={24} style={{ color: "#b3b3b3" }}></GoHome>
           </div>
           <div className={styles.searchInputArea}>
             <div>
               <FiSearch
                 size={24}
-                style={{ color: " #656565", padding: "12px" }}
+                style={{ color: "#b3b3b3", padding: "12px" }}
               ></FiSearch>
             </div>
             <div style={{ width: "100%" }}>
@@ -28,7 +28,7 @@ const Navbar = () => {
             <div className={styles.searchGIcon}>
               <LuPanelTopClose
                 size={24}
-                style={{ color: " #656565", padding: "8px" }}
+                style={{ color: "#b3b3b3", padding: "8px" }}
               ></LuPanelTopClose>
             </div>
           </div>

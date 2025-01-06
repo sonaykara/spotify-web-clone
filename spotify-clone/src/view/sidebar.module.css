@@ -1,14 +1,22 @@
 .sideBar {
     background-color: #121212;
-    width: 420px;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .sideBarHeader {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     gap: 8px;
-    padding: 12px 16px 8px;
+    height: 40px;
+    padding: 12px 16px 8px 16px;
 }
 
 .sideBarContent {
@@ -25,9 +33,12 @@
     justify-content: center;
     align-items: center;
     color: #b3b3b3;
+    div {
+        font-weight: 700
+    }
 }
 
-.headerAddButton {
+.headerPlusButton {
     color: #b3b3b3;
 }
 
@@ -44,7 +55,7 @@
     color: white;
 }
 
-.sideBarUpContent {
+.sideBarFirstContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,13 +66,16 @@
     padding: 16px 20px;
     background-color:#1f1f1f;
 }
-.sideBarUpContentItems {
+.sideBarFirstContentItems {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    div {
+        font-weight: 700;
+    }
 }
 
-.sideBarDownContent {
+.sideBarSecondContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,10 +87,13 @@
     background-color:#1f1f1f;
 }
 
-.sideBarDownContentItems {
+.sideBarSecondContentItems {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    div {
+        font-weight: 700;
+    }
 }
 
 
@@ -86,6 +103,7 @@
     padding: 0 24px;
     text-align: start;
     font-size: .6875rem;
+    margin-top: auto;
     
 }
 .sideBarLinksİtems {
@@ -115,6 +133,7 @@
     border: 1px solid ;
     border-radius: 9999px;
     cursor: pointer;
+    font-weight: 700;
     transition: all 0.3s ease;
     -webkit-border-radius: 9999px;
     -moz-border-radius: 9999px;
@@ -131,6 +150,7 @@
     text-align: center;
     border-radius: 9999px;
     cursor: pointer;
+    font-weight: 700;
     transition: all 0.3s ease;
     -webkit-border-radius: 9999px;
     -moz-border-radius: 9999px;

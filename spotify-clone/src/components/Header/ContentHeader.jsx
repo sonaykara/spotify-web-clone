@@ -1,18 +1,23 @@
 import styles from "./contentHeader.module.css";
-const ContentHeader = () => {
+const ContentHeader = (props) => {
+  const {headerTitle , headerContent} = props;
   return (
     <div>
       <section className={styles.artistContainer}>
-        <div className={styles.artisHeaderWrapper}>
+        <div className={styles.artistHeaderWrapper}>
           <div className={styles.headerİtem}>
-            <h2>
-              <a>Popüler Sanatçılar</a>
-            </h2>
+            {headerTitle && (
+              <h2>
+                <a>{headerTitle}</a>
+              </h2>
+            )}
           </div>
           <div className={styles.headerİtem}>
-            <h2 style={{ color: "#A5B3B3" }}>
-              <a>Tümünü Gör</a>
-            </h2>
+            {headerContent && (
+              <h2 style={{ color: "#A5B3B3" }}>
+                <a style={{"fontSize" : "12px" , "color" : "#b3b3b3" , "fontWeight" : "700"}}>{headerContent}</a>
+              </h2>
+            )}
           </div>
         </div>
       </section>

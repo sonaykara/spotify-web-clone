@@ -84,7 +84,7 @@ const ContentFooter = () => {
             </div>
           </div>
           <hr className={styles.hr}></hr>
-          <div>
+          <div className={styles.footerCopy}>
             <div>
               <div>
                 <p>© 2025 Spotify AB</p>

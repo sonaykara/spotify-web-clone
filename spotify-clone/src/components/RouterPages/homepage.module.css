@@ -1,0 +1,27 @@
+.homePageWrapper {
+  width: 100%;
+  height: calc(100vh - 98px);
+  overflow-y: scroll;
+  margin-left: 8px;
+  margin-right: 8px;
+  padding-left: 18px;
+  padding-right: 18px;
+  background: linear-gradient(
+    to bottom,
+    #121212 0px,
+    #121212 800px,
+    rgba(0, 0, 0, 0.8) 1200px,
+    #000000 100%
+  );
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.artistGridArea {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}

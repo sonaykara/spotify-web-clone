@@ -1,18 +1,21 @@
 .artistContainer {
   display: flex;
+  background-color: transparent;
 }
 
 .artistCard {
-  background-color: #181818;
   width: 14.375rem;
   height: 17.75rem;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   padding-block: 0.75rem;
   padding-inline: 0.75rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+.artistCard:hover {
+  background-color: #181818;
 }
 
 .cardImageWrapper {
@@ -27,12 +30,14 @@
   border-radius: 50%;
   width: 13.75rem;
   height: 13.75rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 .cardTextArea {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 0.5rem;
+
   p {
     color: #b3b3b3;
   }
