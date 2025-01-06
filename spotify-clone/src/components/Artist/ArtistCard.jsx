@@ -1,4 +1,6 @@
+import PlayButton from "../PlayButton/PlayButton";
 import styles from "./artistCard.module.css";
+
 function ArtistCard() {
   return (
     <div className={styles.artistContainer}>
@@ -9,6 +11,9 @@ function ArtistCard() {
             src="https://picsum.photos/200/300"
             alt=""
           />
+          <div className={styles.playBtn}>
+            <PlayButton></PlayButton>
+          </div>
         </div>
         <div className={styles.cardTextArea}>
           <h3 className={styles.artistName}>snatçı ismi</h3>

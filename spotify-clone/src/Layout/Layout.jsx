@@ -1,10 +1,14 @@
-import Register from "../components/Register/Register"
+
+import ArtistCard from "../components/Artist/ArtistCard"
+import Card from "../components/Card/Card"
+
 
 
 const Layout = () => {
   return (
     <div>
-      <Register></Register>
+     <ArtistCard></ArtistCard>
+     <Card></Card>
     </div>
   )
 }

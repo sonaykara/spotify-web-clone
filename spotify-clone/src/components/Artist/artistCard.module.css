@@ -19,6 +19,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .artistImage {
@@ -46,4 +47,22 @@
   font-size: 0.875rem;
   color: #aaa;
   margin-top: 5px;
+}
+
+.playBtn {
+  opacity: 0;
+}
+
+.artistContainer:hover .playBtn {
+  animation: slideUp 0.8s ease-out forwards;
+  opacity: 1;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

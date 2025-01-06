@@ -1,3 +1,4 @@
+import PlayButton from "../PlayButton/PlayButton";
 import styles from "./card.module.css";
 function Card() {
   return (
@@ -9,6 +10,9 @@ function Card() {
             src="https://picsum.photos/200/300"
             alt=""
           />
+          <div className={styles.playBtn}>
+            <PlayButton></PlayButton>
+          </div>
         </div>
         <div className={styles.cardTextArea}>
           <p className={styles.cardTitle}>Şarkı ismi</p>
