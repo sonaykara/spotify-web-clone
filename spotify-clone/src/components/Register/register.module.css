@@ -1,0 +1,248 @@
+.registerWrapper {
+  max-width: 734px;
+  width: 100%;
+  background-color: #121212;
+}
+
+.registerArea {
+  color: white;
+  border-radius: 0.5rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.625rem;
+  color: rgb(255, 255, 255);
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.registerHeadLineArea {
+  border-bottom: none;
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.registerHeadLineİconArea {
+  height: 2rem;
+  text-align: left;
+}
+
+.registerHeadLineText {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 2rem;
+}
+
+.registerLoginWrapper {
+  list-style: none;
+  padding: 0px;
+  text-indent: 0px;
+  display: flex;
+  flex-direction: column;
+  width: 324px;
+  margin: 0px auto;
+  color: rgb(255, 255, 255);
+  row-gap: 0.625rem;
+}
+
+.registerButton {
+  width: 324px;
+  box-sizing: border-box;
+  background-color: transparent;
+  border-radius: 9999px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  touch-action: manipulation;
+  transition-duration: 33ms;
+  transition-property: background-color, border-color, color, box-shadow, filter,
+    transform;
+  user-select: none;
+  vertical-align: middle;
+  transform: translate3d(0px, 0px, 0px);
+  padding-block-start: calc(8px - 1px);
+  padding-block-end: calc(8px - 1px);
+  padding-inline-start: calc(32px- 1px);
+  padding-inline-end: calc(32px - 1px);
+  position: relative;
+  border: 1px solid #818181;
+  color: white;
+  min-inline-size: 0px;
+  min-block-size: 3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  inline-size: 100%;
+  font-size: 1rem;
+  font-weight: 700;
+  -webkit-border-radius: 9999px;
+  -moz-border-radius: 9999px;
+  -ms-border-radius: 9999px;
+  -o-border-radius: 9999px;
+}
+
+.registerHr {
+  margin: 32px 100px;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  border-image: initial;
+  border-top: 1px solid rgb(41, 41, 41);
+}
+
+.userLoginAreaWrapper {
+  width: 324px;
+  margin: 0px auto;
+  padding-bottom: 0px;
+}
+
+.userLoginİnputArea {
+  padding-bottom: 0.5rem;
+}
+
+.userLoginInputitem {
+  padding-bottom: 1rem;
+}
+
+.inputHeadLineItem {
+  box-sizing: border-box;
+  align-items: center;
+  display: flex;
+  inline-size: 100%;
+  padding-block-end: 0.5rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+.inputHeadLine {
+  color: white;
+  padding-bottom: 8px;
+  span {
+    color: white;
+    font-weight: 700;
+    font-size: 0.875rem;
+  }
+}
+
+.registerInput {
+  text-overflow: ellipsis;
+  appearance: none;
+  background-image: none;
+  border: 0px;
+  display: block;
+  transition: box-shadow 100ms ease-in-out, color 100ms ease-in-out;
+  inline-size: 100%;
+  box-sizing: border-box;
+  margin-block: 0px;
+  border-radius: 4px;
+  padding-inline-start: 0.75rem;
+  padding-inline-end: 0.75rem;
+  padding-block-start: 0.75rem;
+  padding-block-end: 0.75rem;
+  min-block-size: 3rem;
+  background-color: transparent;
+  box-shadow: inset 0 0 0 1px #818181;
+  color: #000000;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.inputIconArea {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  color: #656565;
+  right: 0.75rem;
+}
+
+.singUpButonWrapper {
+  text-align: center;
+  padding-block-end: 2rem;
+}
+
+.singUpButton {
+  box-sizing: border-box;
+  background-color: transparent;
+  border-radius: 9999px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  touch-action: manipulation;
+  transition-duration: 33ms;
+  transition-property: background-color, border-color, color, box-shadow, filter,
+    transform;
+  user-select: none;
+  vertical-align: middle;
+  transform: translate3d(0px, 0px, 0px);
+  padding-block-start: calc(8px - 1px);
+  padding-block-end: calc(8px - 1px);
+  padding-inline-start: calc(32px- 1px);
+  padding-inline-end: calc(32px - 1px);
+  position: relative;
+  border: 1px solid #818181;
+  color: white;
+  min-inline-size: 0px;
+  min-block-size: 3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: 100%;
+  font-size: 1rem;
+  font-weight: 700;
+  -webkit-border-radius: 9999px;
+  -moz-border-radius: 9999px;
+  -ms-border-radius: 9999px;
+  -o-border-radius: 9999px;
+  background-color: #1ed760;
+  color: black;
+}
+
+.passwordAuthArea {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  a {
+    margin-block-end: 1.5rem;
+    p {
+      color: white;
+    }
+  }
+}
+
+.registerAuthArea {
+  padding-block-end: 1rem;
+  h2 {
+    text-align: center;
+    margin-top: 0px;
+    span {
+      color: #b3b3b3;
+      font-weight: 400;
+      margin-right: 4px;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+.registerIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  margin-left: 20px;
+}

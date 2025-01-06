@@ -1,10 +1,10 @@
-import CatagoryCard from "../components/catagories/CatagoryCard"
+import Register from "../components/Register/Register"
 
 
 const Layout = () => {
   return (
     <div>
-      <CatagoryCard></CatagoryCard>
+      <Register></Register>
     </div>
   )
 }
