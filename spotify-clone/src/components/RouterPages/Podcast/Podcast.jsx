@@ -1,9 +1,9 @@
 import CatagoryCard from "../../catagories/CatagoryCard";
 import ContentFooter from "../../ContentFoter/ContentFooter";
-import styles from "./podast.module.css";
+import styles from "./podcast.module.css";
 import { IoIosArrowForward } from "react-icons/io";
 
-const Poscast = () => {
+const Podcast = () => {
   return (
     <main className={styles.podcast}>
       <div className={styles.headLineWrapper}>
@@ -35,18 +35,6 @@ const Poscast = () => {
               </div>
               <div className={styles.sectionContent}>
                 <CatagoryCard></CatagoryCard>
-                <CatagoryCard></CatagoryCard>
-                <CatagoryCard></CatagoryCard>
-                <CatagoryCard></CatagoryCard>
-                <CatagoryCard></CatagoryCard>
-                <CatagoryCard></CatagoryCard>
-                <CatagoryCard></CatagoryCard>
-                <CatagoryCard></CatagoryCard>
-                <CatagoryCard></CatagoryCard>
-                <CatagoryCard></CatagoryCard>
-                <CatagoryCard></CatagoryCard>
-                <CatagoryCard></CatagoryCard>
-                <CatagoryCard></CatagoryCard>
               </div>
             </section>
 
@@ -70,4 +58,4 @@ const Poscast = () => {
   );
 };
 
-export default Poscast;
+export default Podcast;
