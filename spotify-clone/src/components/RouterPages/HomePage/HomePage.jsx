@@ -1,8 +1,8 @@
 import styles from "./homepage.module.css";
-import ContentHeader from "../Header/ContentHeader";
-import ArtistCard from "../Artist/ArtistCard";
-import Card from "../Card/Card";
-import ContentFooter from "../ContentFoter/ContentFooter";
+import ContentHeader from "../../Header/ContentHeader";
+import ArtistCard from "../../Artist/ArtistCard";
+import Card from "../../Card/Card";
+import ContentFooter from "../../ContentFoter/ContentFooter";
 
 const HomePage = () => {
   const artistHeaderTitle = "Popüler Sanatçılar";
