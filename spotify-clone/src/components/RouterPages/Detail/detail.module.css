@@ -1,0 +1,12 @@
+.detailWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background: #181818;
+  transition: background-color 0.3s ease;
+}
+
+.detailContent {
+  display: flex;
+  flex-wrap: wrap;
+}
