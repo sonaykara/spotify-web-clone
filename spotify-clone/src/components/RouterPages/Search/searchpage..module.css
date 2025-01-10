@@ -1,0 +1,130 @@
+.searcAreaWrapper {
+  grid-area: main-view / main-view / main-view / right-sidebar;
+  display: flex;
+  grid-area: main-view;
+  min-height: 0;
+  width: 100%;
+  background-color: #121212;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  view-transition-name: main-view;
+}
+
+.mainViewContainer {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+}
+
+.underMainView {
+  overflow: hidden;
+}
+
+.mainViewContainerScroll {
+  min-height: calc(-673px + 100vh);
+  scroll-behavior: smooth;
+  isolation: isolate;
+  padding-bottom: 32px;
+}
+
+.containerWrapper {
+  width: 100%;
+}
+
+.headLine {
+  background: #121212;
+  grid-column: 1 / -1;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.head {
+  margin-inline: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  padding: 0 24px;
+  width: 100%;
+}
+
+.headItemsWrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.headItems {
+  scroll-behavior: smooth;
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  white-space: nowrap;
+  gap: 10px;
+  width: 100%;
+  overscroll-behavior-x: contain;
+}
+
+.headItemWrapper {
+  border-radius: 999px;
+  -webkit-border-radius: 999px;
+  -moz-border-radius: 999px;
+  -ms-border-radius: 999px;
+  -o-border-radius: 999px;
+}
+
+.headItem {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 2px;
+}
+
+.active {
+  background-color: #fff;
+  padding: 3px;
+  font-weight: 400;
+  font-size: 0.875rem;
+  a {
+    color: #121212;
+  }
+}
+
+.sectionWrapper {
+  padding: 0 24px;
+  width: 100%;
+}
+
+.searchAreaSectionFirst {
+  display: flex;
+  gap: 1rem;
+  margin-top: 20px;
+}
+
+.contentWrapper {
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.searchAreaSectionSecondHeadLine,
+.searchAreaSectionThirdHeadLine {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 700;
+  text-wrap: balance;
+}
+
+.searchAreaSectionSecond,
+.searchAreaSectionThird {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

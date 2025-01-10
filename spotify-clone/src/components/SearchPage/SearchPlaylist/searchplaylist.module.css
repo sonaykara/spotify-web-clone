@@ -1,0 +1,80 @@
+.playlistWrapper {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.playlistHeadline {
+  margin-bottom: 8px;
+  min-block-size: 40px;
+  padding-block: 0;
+  h2 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-wrap: balance;
+  }
+}
+
+.playlistArea {
+  width: 100%;
+}
+
+.playlistInfoWrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.playlistInfoItems {
+  width: 100%;
+}
+.playlistInfoItem {
+  display: flex;
+  gap: 5px;
+}
+
+.playlistTileInfoImg {
+  padding-bottom: 40px;
+  width: 40px;
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  position: relative;
+
+  img {
+    border-radius: 6px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+  }
+}
+
+.playlistInfoContent {
+  h2 {
+    font-size: 0.875rem;
+    font-weight: 400;
+  }
+}
+
+.playlistInfoArtist {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  span {
+    color: #b3b3b3;
+    font-size: 0.875rem;
+    font-weight: 400;
+  }
+}
+
+.playlistSideWrapper {
+  display: flex;
+  gap: 2rem;
+}
