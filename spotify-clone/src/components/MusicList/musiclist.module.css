@@ -1,0 +1,98 @@
+.musicList {
+  list-style: none;
+  padding: 0;
+  margin-left: 1rem;
+}
+
+.musicItem {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  align-items: center;
+  height: 56px;
+}
+
+.musicItem:hover {
+  background-color: #2c302c;
+}
+
+.listNumber {
+  color: #b1b1b1;
+  display: flex;
+  align-items: center;
+}
+.listPlayİcon {
+  visibility: hidden;
+}
+
+.musicItem:hover .listNumber {
+  visibility: hidden;
+}
+.musicItem:hover .listPlayİcon {
+  visibility: visible;
+}
+.musicItem:last-child {
+  border-bottom: none;
+}
+
+.songInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.songInfo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.songViews {
+  text-align: center;
+  font-size: 14px;
+  color: #b1b1b1;
+}
+.iconArea {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+.musicItem:hover .iconArea {
+  visibility: visible;
+}
+
+.musicItem:hover .songViews {
+  color: #fff;
+}
+
+.songDurationArea {
+  display: flex;
+  gap: 2rem;
+}
+
+.songDuration {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.musicListFooter {
+  background: none;
+  border: none;
+  color: hsla(0, 0%, 100%, 0.7);
+  padding: 16px;
+  cursor: pointer;
+}

@@ -1,6 +1,6 @@
 import styles from "./contentHeader.module.css";
 const ContentHeader = (props) => {
-  const {headerTitle , headerContent} = props;
+  const { headerTitle, headerContent } = props;
   return (
     <div>
       <section className={styles.artistContainer}>
@@ -15,7 +15,15 @@ const ContentHeader = (props) => {
           <div className={styles.headerİtem}>
             {headerContent && (
               <h2 style={{ color: "#A5B3B3" }}>
-                <a style={{"fontSize" : "12px" , "color" : "#b3b3b3" , "fontWeight" : "700"}}>{headerContent}</a>
+                <a
+                  style={{
+                    fontSize: "12px",
+                    color: "#b3b3b3",
+                    fontWeight: "700",
+                  }}
+                >
+                  {headerContent}
+                </a>
               </h2>
             )}
           </div>

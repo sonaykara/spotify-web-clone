@@ -1,0 +1,42 @@
+.navbarWrapper {
+  display: flex;
+  display: none;
+  align-items: center;
+  gap: 1.5rem;
+  height: 56px;
+  padding: 1.5rem;
+  h1 {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+}
+
+.playButton {
+  width: 60px;
+  height: 60px;
+  background-color: #1db954;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.iconPlay {
+  width: 0;
+  height: 0;
+  border-left: 12px solid #fff;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+
+.playButton:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.playButton:active {
+  transform: scale(0.95);
+}
