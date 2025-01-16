@@ -1,10 +1,9 @@
-import Playlist from "../components/RouterPages/PlayList/PlayList";
-import FilterButton from "../components/FilterButton/FilterButton"
+import AlbumPlaylist from "../components/RouterPages/AlbümPlaylist/AlbumPlaylist"
 
 const Layout = () => {
   return (
     <div>
-    <Playlist></Playlist>
+    <AlbumPlaylist></AlbumPlaylist>
     </div>
   );
 };
