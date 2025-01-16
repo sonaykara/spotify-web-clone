@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import styles from "./playlist.module.css";
 import ArtistSubscription from "../../ArtistSubscription/ArtistSubscription";
 import MusicList from "../../MusicList/MusicList";
@@ -8,6 +9,10 @@ import { TbRosetteDiscountCheckFilled } from "react-icons/tb";
 import PlayListNavbar from "./PlayListNavbar/PlayListNavbar";
 
 const Playlist = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [showNavbar, setShowNavbar] = useState(false);
+  const [imageOpacity, setImageOpacity] = useState(1);
+
   const songs = [
     {
       title: "Biliyorsun",
@@ -29,23 +34,48 @@ const Playlist = () => {
     },
   ];
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.scrollY;
+
+      setScrollPosition(position);
+
+      setShowNavbar(position > 303);
+
+      const newOpacity = Math.max(1 - position / 200, 0);
+      setImageOpacity(newOpacity);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div>
+      <div
+        className={`${styles.fixedNavbar} ${showNavbar ? styles.visible : ""}`}
+      >
+        <PlayListNavbar />
+      </div>
+
       <div className={styles.playlistWraper}>
-        <PlayListNavbar></PlayListNavbar>
         <div className={styles.playlistHead}>
           <div className={styles.playlistImageArea}>
             <img
               className={styles.playlistImage}
+              style={{ opacity: imageOpacity }}
               src="https://picsum.photos/200/300"
-            ></img>
+              alt="Playlist"
+            />
           </div>
           <div className={styles.playlistHeadLine}>
             <div>
               <div className={styles.artistStatus}>
                 <div className={styles.artistStatusIcon}>
                   <span>
-                    <TbRosetteDiscountCheckFilled></TbRosetteDiscountCheckFilled>
+                    <TbRosetteDiscountCheckFilled />
                   </span>{" "}
                   Doğrulanmış sanatçı
                 </div>
@@ -62,12 +92,12 @@ const Playlist = () => {
 
         <div className={styles.sectionWrapper}>
           <div className={styles.playlistSubArea}>
-            <ArtistSubscription></ArtistSubscription>
+            <ArtistSubscription />
           </div>
           <div className={styles.musicListArea}>
             <div className={styles.musicListHeadLine}>Popüler</div>
             <div className={styles.musicList}>
-              <MusicList songs={songs}></MusicList>
+              <MusicList songs={songs} />
             </div>
           </div>
 
@@ -77,18 +107,17 @@ const Playlist = () => {
               <div>Tümünü Gör</div>
             </div>
             <div className={styles.filterArea}>
-              <FilterButton></FilterButton>
+              <FilterButton />
             </div>
-
             <div className={styles.cardArea}>
-              <Card></Card>
-              <Card></Card>
-              <Card></Card>
-              <Card></Card>
-              <Card></Card>
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
             </div>
 
-            <ContentFooter></ContentFooter>
+            <ContentFooter />
           </div>
         </div>
       </div>

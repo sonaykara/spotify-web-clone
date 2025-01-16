@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import styles from "./followbutton.module.css"
+import { useState } from "react";
+import styles from "./followbutton.module.css";
 const FollowButton = () => {
   const [isFollowing, setIsFollowing] = useState(false);
 
@@ -8,7 +8,7 @@ const FollowButton = () => {
       className={styles.followButton}
       onClick={() => setIsFollowing(!isFollowing)}
     >
-      {isFollowing ? 'Takip Ediliyor' : 'Takip Et'}
+      {isFollowing ? "Takip Ediliyor" : "Takip Et"}
     </button>
   );
 };
